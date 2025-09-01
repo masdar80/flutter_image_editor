@@ -1,0 +1,43 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Prefer const constructors
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    
+    # Prefer final variables
+    prefer_final_locals: true
+    prefer_final_fields: true
+    
+    # Avoid unnecessary code
+    avoid_print: true
+    avoid_unnecessary_containers: true
+    
+    # Prefer async/await
+    prefer_async_await: false
+    
+    # Prefer single quotes
+    prefer_single_quotes: true
+    
+    # Prefer expression function bodies
+    prefer_expression_function_bodies: true
+    
+    # Prefer collection if
+    prefer_collection_literals: true
+    
+    # Prefer spread collections
+    prefer_spread_collections: true
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  
+  errors:
+    # Treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # Treat missing returns as a warning (not a hint)
+    missing_return: warning
+    # Allow having multiple files with the same name
+    duplicate_ignore: ignore

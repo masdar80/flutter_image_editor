@@ -1,4 +1,4 @@
-name: flutter_image_editor
+name: flutter_image_editor_enhanced
 description: "A powerful Flutter image editor with cropping, resizing, and aspect ratio control. Perfect for apps that need image editing capabilities with custom aspect ratios and size limits."
 version: 1.0.1
 homepage: https://github.com/masdar80/flutter_image_editor

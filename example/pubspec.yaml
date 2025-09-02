@@ -1,5 +1,5 @@
-name: flutter_image_editor_example
-description: Example app for flutter_image_editor package
+name: flutter_image_editor_enhanced_example
+description: Example app for flutter_image_editor_enhanced package
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_image_editor:
+  flutter_image_editor_enhanced:
     path: ../
   image_picker: ^1.0.7
   cupertino_icons: ^1.0.2

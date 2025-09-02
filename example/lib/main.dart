@@ -37,6 +37,8 @@ class AppTranslations extends Translations {
           'show_more': 'Show more',
           'show_less': 'Show less',
           'instructions': 'Instructions',
+          'cancel': 'Cancel',
+          'save': 'Save',
           'select_image': 'Select Image',
           'gallery': 'Gallery',
           'camera': 'Camera',
@@ -67,6 +69,8 @@ class AppTranslations extends Translations {
           'show_more': 'عرض المزيد',
           'show_less': 'عرض أقل',
           'instructions': 'التعليمات',
+          'cancel': 'إلغاء',
+          'save': 'حفظ',
           'select_image': 'اختر الصورة',
           'gallery': 'المعرض',
           'camera': 'الكاميرا',
@@ -147,7 +151,10 @@ class _MyHomePageState extends State<MyHomePage> {
         'ok': 'ok'.tr,
         'image_not_filling_frame': 'image_not_filling_frame'.tr,
         'show_more': 'show_more'.tr,
+        'show_less': 'show_less'.tr,
         'instructions': 'instructions'.tr,
+        'cancel': 'cancel'.tr,
+        'save': 'save'.tr,
       },
     );
 

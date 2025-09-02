@@ -242,8 +242,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/flutter_image_editor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/flutter_image_editor/discussions)
+- **Issues**: [GitHub Issues](https://github.com/masdar80/flutter_image_editor/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/masdar80/flutter_image_editor/discussions)
 - **Email**: mashhourmd@gmail.com
 
 ## 📈 Roadmap

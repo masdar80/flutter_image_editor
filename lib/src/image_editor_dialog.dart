@@ -2,7 +2,6 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image/image.dart' as img;
-import 'package:get/get.dart';
 
 class ImageEditorDialog extends StatefulWidget {
   final File imageFile;
@@ -303,7 +302,7 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
                     Icon(Icons.info_outline, size: 12, color: Colors.blue[600]),
                     const SizedBox(width: 4),
                     Text(
-                      'Show more',
+                      widget.translations?['show_more'] ?? 'Show more',
                       style: TextStyle(
                         fontSize: 11,
                         color: Colors.blue[600],
@@ -335,7 +334,7 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
           Expanded(
             child: OutlinedButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Cancel'),
+              child: Text(widget.translations?['cancel'] ?? 'Cancel'),
             ),
           ),
           const SizedBox(width: 16),
@@ -355,7 +354,7 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
                         valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                     )
-                  : const Text('Save'),
+                  : Text(widget.translations?['save'] ?? 'Save'),
             ),
           ),
         ],
@@ -408,7 +407,7 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
           children: [
             Icon(Icons.info_outline, color: Colors.blue[600], size: 24),
             const SizedBox(width: 8),
-            const Text('Instructions'),
+            Text(widget.translations?['instructions'] ?? 'Instructions'),
           ],
         ),
         content: const SingleChildScrollView(
@@ -426,7 +425,7 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('OK'),
+            child: Text(widget.translations?['ok'] ?? 'OK'),
           ),
         ],
       ),
@@ -495,17 +494,18 @@ class _ImageEditorDialogState extends State<ImageEditorDialog> {
           children: [
             Icon(Icons.warning, color: Colors.orange[600], size: 24),
             const SizedBox(width: 8),
-            const Text('Warning'),
+            Text(widget.translations?['warning'] ?? 'Warning'),
           ],
         ),
-        content: const Text(
+        content: Text(
+          widget.translations?['image_not_filling_frame'] ?? 
           'The image does not completely fill the crop frame. Please move or zoom the image to ensure it covers the entire blue frame area.',
-          style: TextStyle(fontSize: 16),
+          style: const TextStyle(fontSize: 16),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('OK'),
+            child: Text(widget.translations?['ok'] ?? 'OK'),
           ),
         ],
       ),

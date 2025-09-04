@@ -21,7 +21,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_image_editor: ^1.0.0
+  flutter_image_editor_enhanced: ^1.0.2
 ```
 
 You'll also need to add the following dependencies:
@@ -37,7 +37,7 @@ dependencies:
 ### Basic Usage
 
 ```dart
-import 'package:flutter_image_editor/flutter_image_editor.dart';
+import 'package:flutter_image_editor_enhanced/flutter_image_editor_enhanced.dart';
 
 // Edit an image with default settings
 final File? editedFile = await ImageEditor.editImage(
